@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqhveem Abbas's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 2, 24);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 54);
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+
+            color: rgb(165, 26, 184);
+            font-size: 1.07 rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 90px 0;
+            align-items: center;
+
+        }
+
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        div.student {
+
+            width: 30%;
+        }
+
+
+        .leftSection {
+
+            font-size: 3rem;
+
+
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            font-size: 19px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            /* Resetting padding and width */
+            padding-right: 40px;
+            padding-left: 40px;
+            width: auto;
+        }
+
+        .download-btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            font-size: 19px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            /* Resetting padding and width */
+            padding-right: 40px;
+            padding-left: 40px;
+            width: auto;
+            text-decoration: none;
+
+
+        }
+
+
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+
+            color: rgb(118, 215, 240);
+        }
+
+
+
+        #element {
+            color: rgb(118, 215, 240);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+       /*About*/
+
+       #about{
+
+        padding: 80px 0;
+       
+        margin-left: -316px;
+       }
+
+       .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+
+       .about-col-1{
+        flex-basis: 29%;
+        margin-left: -115px;
+       }
+
+       .about-col-1 img{
+        width: 150%;
+        border-radius: 15px;
+       }
+
+       .about-col-2{
+        flex-basis: 60%;
+       }
+
+       .sub-title{
+
+        color: white;
+        font-size: 55px;
+       }
+
+
+        footer{
+        background: #03032b;
+        padding-top: 6px;
+    }
+    .container{
+        width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 476px;
+    padding-top: 18px;
+      }
+    
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+        color: white;
+        
+    }
+    .footer-content ul{
+        text-align: center;
+        
+    }
+    .list{
+        padding: 0;
+        
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+        
+        
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+        
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #f18930;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background: #010122;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+        
+    }
+    .bottom-bar p{
+        color: #ffffff;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    .footer-content a {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;   
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+    height: 3px; /* Add height property */
+    background: #ff0202; /* Set the background color of the line */
+    content: ''; /* Add this line */
+    position: absolute;
+    left: 600px;
+    bottom: -920px;
+    transition: 0.5s;
+}
+
+       
+.tab-links.active-link::after{
+    width: 1.5%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: rgb(53, 48, 206);
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Taqhveem's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="#footer">Contact Me</a></li> <!-- Changed href value -->
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!----->
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,my name is <span class="purple">Taqhveem Abbas</span>.
+                A
+
+
+
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Taqhveem Abbas (CV).pdf" download class="download-btn">Download Resume</a>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="Your Image" class="circular-image">
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+<!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ab.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem officiis unde enim. Nesciunt odit similique asperiores suscipit autem? Similique ratione quas accusantium obcaecati eos, doloribus consectetur exercitationem non maiores!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>
+<div id="skills" class="tab-contents">Skills Content</div>
+
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building IOS/Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building IOS/Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building IOS/Android apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <footer id ='footer'>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact </h3>
+                <p>Email: taqhveem@gmail.com</p>
+                <p>Phone:  +971 56 702 8456</p>
+                <p>Address: Al Nahda Sharjah</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+       var typed = new Typed('#element', {
+    strings: [' student.', 'Machine learning enthusiast.', 'Passionate learner.', 'Tech enthusiast.', 'Problem solver.', 'Creative thinker.', 'Team player.',  'UI/UX enthusiast.' ,  'Web Developer.'], // Add a comma here
+    typeSpeed: 90,
+});
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select the download button
+            const downloadButton = document.getElementById('downloadButton');
+
+            // Add click event listener to the download button
+            downloadButton.addEventListener('click', function () {
+                // Replace 'Taqhveem_Abbas_CV.pdf' with your actual CV file name and extension
+                const cvFilename = 'Portfolio/Taqhveem_Abbas_CV.pdf';
+                // Replace 'path/to/your/cv/' with the actual path to your CV file
+                const cvFilePath = 'path/to/your/cv/' + cvFilename;
+
+                // Create a new anchor element
+                const link = document.createElement('a');
+                link.href = cvFilePath;
+
+                // Set the download attribute to enable downloading
+                link.setAttribute('download', cvFilename);
+
+                // Dispatch a click event on the anchor element
+                document.body.appendChild(link);
+                link.click();
+
+                // Clean up: remove the anchor element from the document
+                document.body.removeChild(link);
+            });
+        });
+
+
+        document.querySelector('a[href="#footer"]').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const footer = document.getElementById('footer');
+    const yOffset = footer.getBoundingClientRect().top + window.pageYOffset;
+
+    window.scrollTo({
+        top: yOffset,
+        behavior: 'smooth'
+    });
+});
+
+function opentab(event, tabname) {
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    // Remove 'active-link' class from all tab links
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove('active-link');
+    }
+
+    // Remove 'active-tab' class from all tab contents
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove('active-tab');
+    }
+
+    // Add 'active-link' class to the clicked tab link
+    event.currentTarget.classList.add('active-link');
+
+    // Add 'active-tab' class to the corresponding tab content
+    document.getElementById(tabname).classList.add('active-tab');
+}
+
+
+
+    </script>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
